@@ -7,46 +7,136 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    
     <nav>
         <div class="nav-logo">
-            <img src="./logo.png" alt="logo">
-            <h1>Air International School</h1>
+            <img src="./logo.png" alt="School Logo">
+            <h1>Air International School & College Maini Swabi</h1>
         </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-        <div>
-            <button>Open</button>
+        
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+    
+            <!-- Academics Dropdown -->
+            <li class="dropdown">
+                <a href="#">Academics ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Examinations</a></li>
+                    <li><a href="#">Results</a></li>
+                </ul>
+            </li>
+    
+            <!-- Admissions Dropdown -->
+            <li class="dropdown">
+                <a href="#">Admissions ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Apply Online</a></li>
+                    <li><a href="#">Fee Structure</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </li>
+    
+            <!-- Facilities Dropdown -->
+            <li class="dropdown">
+                <a href="#">Facilities ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Sports Complex</a></li>
+                    <li><a href="#">Computer Labs</a></li>
+                    <li><a href="#">Transport</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <button class="nav-button">Apply Now</button>
+    
+        <!-- Mobile Menu Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            ☰
         </div>
     </nav>
+    
+    <!-- Mobile Dropdown Menu -->
+    <ul class="mobile-nav" id="mobileNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobileNav");
+            menu.classList.toggle("active");
+        }
+    </script>
+    
+    
     <section class="hero">
-       <div> 
-        <h1>Air International School</h1>
-        <p>Air International School is dedicated to providing a world-class education that fosters intellectual curiosity, creativity, and critical thinking. With a commitment to academic excellence, our school integrates modern teaching methodologies with a strong foundation in core values, ensuring students develop both knowledge and character. Our highly qualified faculty, state-of-the-art facilities, and diverse extracurricular programs empower students to excel in a dynamic global environment. At Air International School, we believe in nurturing young minds to become confident, responsible, and innovative leaders of tomorrow.</p>
-    </div>
-    <div>
-        <img src="./Air3.jpg" alt="">
-    </div>
+        <div> 
+            <h1>Air International School & College Maini Sawabi</h1>
+            <p>Air International School is dedicated to providing a world-class education that fosters intellectual curiosity, creativity, and critical thinking. With a commitment to academic excellence, our school integrates modern teaching methodologies with a strong foundation in core values, ensuring students develop both knowledge and character.</p>
+        </div>
     </section>
-    <section class="middle">
+    
+    <section class="currentPage">
         <div>
-            <img src="./Air1.jpg" alt="">
+            <img src="./Air1.jpg" alt="Campus Image">
+        </div>
+    </section>
+    
+    <section class="Gallery">
+        <div>
+            <img src="./Air2.jpg" alt="Classroom Image">
         </div>
         <div>
-            <img src="./Air2.jpg" alt="">
+            <img src="./Air3.jpg" alt="Sports Area">
         </div>
-        <div>
-            <img src="./Air3.jpg" alt="">
+    </section>
+    
+     <section class="facilities-section">
+        <h2>Our School Facilities</h2>
+        <div class="facilities-list">
+            <div class="facility">School Transport</div>
+            <div class="facility">Library & Study Materials</div>
+            <div class="facility">Medical Room & First Aid</div>
+            <div class="facility">Sports & Playgrounds</div>
+            <div class="facility">Computer & Technology Labs</div>
+            <div class="facility">Security & Safety Measures</div>
         </div>
     </section>
     <section class="footer">
-        <p>Follow us on:</p>
-        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Air International School</h3>
+                <p>Maini, Swabi | Contact: +92 123 4567890</p>
+                <p>Email: info@airinternationalschool.com</p>
+                <p>Providing Quality Education for a Better Future.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Admissions</a>
+                <a href="#">Academics</a>
+                <a href="#">Facilities</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2024 Air International School. All Rights Reserved.</p>
     </section>
+    
     
 </body>
 </html>
